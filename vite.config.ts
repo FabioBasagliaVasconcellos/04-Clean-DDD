@@ -1,4 +1,5 @@
 import { defineConfig } from "vite";
+import tsConfigPaths from "vite-tsconfig-paths";
 
 export default defineConfig({
   plugins: [tsConfigPaths()],
@@ -6,7 +7,3 @@ export default defineConfig({
     globals: true,
   },
 });
-
-function tsConfigPaths(): import("vite").PluginOption {
-  throw new Error("Function not implemented.");
-}
