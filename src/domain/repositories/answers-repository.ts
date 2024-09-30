@@ -1,6 +1,6 @@
 import { Answer } from "../forum/enterprise/entities/answer";
 
-
 export interface AnswersRepository {
-  create(answer: Answer): Promise <void>
+  findById(arg0: string): unknown;
+  create(answer: Answer): Promise<void>;
 }
